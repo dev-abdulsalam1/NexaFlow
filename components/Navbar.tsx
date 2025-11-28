@@ -25,7 +25,7 @@ export default function Navbar() {
 
                 {/* --- Desktop Navigation (Hidden on Mobile) --- */}
                 <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-                    <Link href="#features" className="hover:text-blue-600 transition-colors">Features</Link>
+                    <Link href="/features" className="hover:text-blue-600 transition-colors">Features</Link>
                     <Link href="#pricing" className="hover:text-blue-600 transition-colors">Pricing</Link>
                     <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
                     <Link href="/contact" className="hover:text-blue-600 transition-colors">Contact</Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
                     {/* Mobile Nav Links */}
                     <nav className="flex flex-col gap-4 text-base font-medium text-slate-600">
                         <Link
-                            href="#features"
+                            href="/features"
                             className="hover:text-blue-600 transition-colors"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
