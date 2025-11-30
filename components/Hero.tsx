@@ -18,7 +18,7 @@ export default function Hero() {
                 <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 max-w-4xl mx-auto">
                     Manage your team workflow <br className="hidden md:block" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-400">
-                        without the chaos.
+                        without the Sumeya🔥.
                     </span>
                 </h1>
 
