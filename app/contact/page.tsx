@@ -13,11 +13,6 @@ const Contact = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form submitted:", formData);
-        setFormData({ name: "", email: "", message: "" });
-    };
 
     return (
         <section className="w-full py-24 bg-gradient-to-r from-blue-50 to-sky-100" id="contact">
@@ -37,7 +32,6 @@ const Contact = () => {
 
                     {/* Contact Form */}
                     <form
-                        onSubmit={handleSubmit}
                         className="bg-white rounded-2xl p-8 shadow-lg"
                     >
                         <div className="mb-4">
