@@ -3,16 +3,6 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import React, { useState } from "react";
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        message: ""
-    });
-
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
 
     return (
         <section className="w-full py-24 bg-gradient-to-r from-blue-50 to-sky-100" id="contact">
@@ -39,8 +29,6 @@ const Contact = () => {
                             <input
                                 type="text"
                                 name="name"
-                                value={formData.name}
-                                onChange={handleChange}
                                 placeholder="Your Name"
                                 className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 required
@@ -52,8 +40,6 @@ const Contact = () => {
                             <input
                                 type="email"
                                 name="email"
-                                value={formData.email}
-                                onChange={handleChange}
                                 placeholder="Your Email"
                                 className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 required
@@ -64,8 +50,6 @@ const Contact = () => {
                             <label className="block text-gray-700 font-semibold mb-2">Message</label>
                             <textarea
                                 name="message"
-                                value={formData.message}
-                                onChange={handleChange}
                                 placeholder="Your Message"
                                 rows="5"
                                 className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
