@@ -2,12 +2,14 @@ import { ArrowRight, TrendingUp, User } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden py-24 md:py-40 bg-gradient-to-b from-blue-50 to-white">
+        <section className="relative overflow-hidden py-24 md:py-40 bg-gradient-to-br from-[#f3f8ff] to-white">
             <div className="container mx-auto px-6 text-center relative z-10">
+                {/* bg-plur  */}
+                <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-200/40 blur-3xl rounded-full -z-10"></div>
 
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-semibold mb-6 border border-blue-100">
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                     ✨ Trusted by 500+ companies
                 </div>
 
@@ -44,7 +46,6 @@ export default function Hero() {
                         <TrendingUp className="text-green-500" /> 98% Satisfaction
                     </span>
                 </div>
-
                 {/* Dashboard preveiw */}
                 <div className="flex justify-center">
                     <img
@@ -54,6 +55,6 @@ export default function Hero() {
                     />
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
